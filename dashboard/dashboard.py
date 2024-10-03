@@ -36,8 +36,8 @@ def get_season_counts(df):
     return season_counts
 
 
-bikeday_df = pd.read_csv("bike_day.csv")
-bikehour_df = pd.read_csv("bike_hour.csv")
+bikeday_df = pd.read_csv("dashboard/bike_day.csv")
+bikehour_df = pd.read_csv("dashboard/bike_hour.csv")
 
 datetime_columns = ["dteday"]
 bikeday_df.sort_values(by="dteday", inplace=True)
